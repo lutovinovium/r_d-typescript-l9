@@ -1,11 +1,10 @@
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '../components/Welcome/Welcome';
+import {Container} from "@mantine/core";
+import {CreateTaskForm} from "@/components/CreateTaskForm/CreateTaskForm";
 
 export function HomePage() {
-  return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
-  );
+    return (
+        <Container size="md" py="xl">
+            <CreateTaskForm/>
+        </Container>
+    );
 }
